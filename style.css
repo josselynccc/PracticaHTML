@@ -9,10 +9,56 @@ body {
     color: #8d2c2c;
 }
 .main__avatar{
-    width: 10rem;
+    width: auto;
     height: 10rem;
     border: solid 0.2rem #8d2c2c;
     border-radius: 50%;
     margin: 1rem;
     background-color: #d8d8d8;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
+}
+
+input, select {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+
+.form__button{
+    background-color: #8d2c2c;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-size: medium;
+}
+
+.form__section-accesorios{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.form__section-accesorios__item{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }

@@ -15,7 +15,7 @@
         <img class="main__avatar" src="https://cdn3d.iconscout.com/3d/premium/thumb/hombre-avatar-3d-icon-png-download-8330274.png"
             alt="Avatar Inicial" />
         <form action="">
-            <fieldset>
+            <fieldset class="form__section-identidad">
                 <legend>IDENTIDAD</legend>
                 <label for="nombre">Nombre:</label>
                 <input type="text" name="nombre" id="nombre" placeholder="Marcela" required aria-required="true" aria-errormessage="nombre-error">
@@ -31,7 +31,7 @@
                 <div class="error-message" role="alert" id="genero-error" aria-live="polite"></div>
 
             </fieldset>
-            <fieldset>
+            <fieldset class="form__section-rasgos">
                 <legend>RASGOS FÍSICOS</legend>
                 <label for="formaRostro">Forma del rostro:</label>
                 <select name="formaRostro" id="formaRostro" required aria-required="true">
@@ -79,17 +79,23 @@
                 <div class="error-message" role="alert" id="alturaCuerpo-error" aria-live="polite"></div>
 
             </fieldset>
-            <fieldset>
+            <fieldset class="form__section-accesorios">
                 <legend>ACCESORIOS</legend>
-                <label for="gafas">Gafas</label>
-                <input type="checkbox" name="accesorio" id="gafas">
-                <label for="sombrero">Sombrero</label>
-                <input type="checkbox" name="accesorio" id="sombrero">
-                <label for="collar">Collar</label>
-                <input type="checkbox" name="accesorio" id="collar">
+                <div class="form__section-accesorios__item">
+                    <input type="checkbox" name="accesorio" id="gafas">
+                    <label for="gafas">Gafas</label>
+                </div>
+                <div class="form__section-accesorios__item">
+                    <input type="checkbox" name="accesorio" id="sombrero">
+                    <label for="sombrero">Sombrero</label>
+                </div>
+                <div class="form__section-accesorios__item">
+                    <input type="checkbox" name="accesorio" id="collar">
+                    <label for="collar">Collar</label>
+                </div>
                 <div class="error-message" role="alert" id="accesorio-error" aria-live="polite"></div>
             </fieldset>
-            <button type="submit">Crear Avatar</button>
+            <button type="submit" class="form__button">Crear Avatar</button>
         </form>
     </main>
     <footer role="contentinfo">
