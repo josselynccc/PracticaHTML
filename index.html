@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="errores.js"></script>
+</head>
+<body>
+    <header role="banner" class="header">
+        <h1 class="header__tittle">Bienvenido a Creador de Avatares</h1>
+    </header>
+    <main role="main">
+        <img class="main__avatar" src="https://cdn3d.iconscout.com/3d/premium/thumb/hombre-avatar-3d-icon-png-download-8330274.png"
+            alt="Avatar Inicial" />
+        <form action="">
+            <fieldset>
+                <legend>IDENTIDAD</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Marcela" required aria-required="true" aria-errormessage="nombre-error">
+                <div class="error-message" role="alert" id="nombre-error" aria-live="polite"></div>
+                
+                <label for="genero">Género:</label>
+                <select name="genero" id="genero" required aria-required="true" aria-errormessage="genero-error">
+                    <option value="">Selecciona tu género</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <div class="error-message" role="alert" id="genero-error" aria-live="polite"></div>
+
+            </fieldset>
+            <fieldset>
+                <legend>RASGOS FÍSICOS</legend>
+                <label for="formaRostro">Forma del rostro:</label>
+                <select name="formaRostro" id="formaRostro" required aria-required="true">
+                    <option value="">Selecciona la forma del rostro</option>
+                    <option value="redonda">Redonda</option>
+                    <option value="ovalada">Ovalada</option>
+                    <option value="otro">Otro</option>
+                </select>
+                <div class="error-message" role="alert" id="formaRostro-error" aria-live="polite"></div>
+
+                <label for="colorOjos">Color de ojos:</label>
+                <select name="colorOjos" id="colorOjos" required aria-required="true">
+                    <option value="">Selecciona el color de ojos</option>
+                    <option value="marrones">Marrones</option>
+                    <option value="verdes">Verdes</option>
+                    <option value="azules">Azules</option>
+                </select>
+                <div class="error-message" role="alert" id="colorOjos-error" aria-live="polite"></div>
+
+                <label for="colorPiel">Color de piel:</label>
+                <select name="colorPiel" id="colorPiel" required aria-required="true">
+                    <option value="">Selecciona el color de piel</option>
+                    <option value="blanca">Blanca</option>
+                    <option value="morena">Morena</option>
+                    <option value="oscura">Oscura</option>
+                    <option value="azul">Azul</option>
+                </select>
+                <div class="error-message" role="alert" id="colorPiel-error" aria-live="polite"></div>
+
+                <label for="tipoCuerpo">Tipo de cuerpo:</label>
+                <select name="tipoCuerpo" id="tipoCuerpo" required aria-required="true">
+                    <option value="">Selecciona el tipo de cuerpo</option>
+                    <option value="delgado">Delgado</option>
+                    <option value="robusto">Robusto</option>
+                </select>
+                <div class="error-message" role="alert" id="tipoCuerpo-error" aria-live="polite"></div>
+                
+                <label for="alturaCuerpo">Altura del cuerpo:</label>
+                <select name="alturaCuerpo" id="alturaCuerpo" required aria-required="true">
+                    <option value="">Selecciona la altura del cuerpo</option>
+                    <option value="bajo">Bajo</option>
+                    <option value="medio">Medio</option>
+                    <option value="alto">Alto</option>
+                </select>
+                <div class="error-message" role="alert" id="alturaCuerpo-error" aria-live="polite"></div>
+
+            </fieldset>
+            <fieldset>
+                <legend>ACCESORIOS</legend>
+                <label for="gafas">Gafas</label>
+                <input type="checkbox" name="accesorio" id="gafas">
+                <label for="sombrero">Sombrero</label>
+                <input type="checkbox" name="accesorio" id="sombrero">
+                <label for="collar">Collar</label>
+                <input type="checkbox" name="accesorio" id="collar">
+                <div class="error-message" role="alert" id="accesorio-error" aria-live="polite"></div>
+            </fieldset>
+            <button type="submit">Crear Avatar</button>
+        </form>
+    </main>
+    <footer role="contentinfo">
+        <p>Si necesitas ayuda, contacta con +51 99874XXXX.</p>
+    </footer> 
+</body>
+</html>
